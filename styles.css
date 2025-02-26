@@ -1,0 +1,282 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.top-section-wrapper {
+  background-color: #001D37;
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow: hidden;
+}
+
+.forward-content {
+  z-index: 5;
+  position: relative;
+}
+
+.intro-area h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  margin: 0;
+  line-height: 97.3%;
+  max-width: 525px;
+}
+
+.home-subtitle {
+  font-size: 1.25rem;
+  line-height: 169.3%;
+  margin: 1rem 0;
+  max-width: 425px;
+}
+
+.intro-area {
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 1066px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pet-btn {
+  display: inline-block;
+  background-color: #475AFF;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #475AFF;
+  padding: 13px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: background-color .3s ease-out, border .3s ease-out, color .3s ease-out;
+}
+
+.pet-btn:hover {
+  background-color: #2132CC;
+  border: 2px solid #2132CC;
+}
+
+.pet-btn--outline {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.pet-btn--outline:hover {
+  background-color: white;
+  color: #2132CC;
+  border: 2px solid white;
+}
+
+.front-pg-btns {
+  margin-bottom: 70px;
+}
+
+.utility-mr {
+  margin-right: 10px;
+}
+
+.source-sans-3 {
+  font-family: "Source Sans 3", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.intro-feature {
+  border: 1px solid rgba(255, 255, 255, .24);
+  padding: 33px 25px;
+}
+
+.intro-feature h2 {
+  font-size: 1.5rem;
+  margin: 36px 0 3px 0;
+}
+
+.intro-feature p {
+  margin: 0;
+  font-size: 1.0625rem;
+}
+
+.home-callouts {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+@media screen and (min-width: 580px) {
+  .home-callouts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .home-callouts {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.circle {
+  width: 617px;
+  height: 617px;
+  background-color: #D660FF;
+  opacity: .85;
+  border-radius: 50%;
+  filter: blur(150px);
+  position: absolute;
+  top: 62px;
+  right: -390px;
+}
+
+.circle-blue {
+  width: 617px;
+  height: 617px;
+  background-color: #6079FF;
+  opacity: .85;
+  border-radius: 50%;
+  filter: blur(150px);
+  position: absolute;
+  top: -365px;
+  left: -123px;
+}
+
+.adoptable-section {
+  background-color: white;
+  padding: 60px 16px;
+}
+
+.adoptable-section-inner {
+  max-width: 1066px;
+  margin: 0 auto;
+}
+
+.adoptable-title {
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.pet-filter {
+  color: #9f9f9f;
+  font-size: 1.15rem;
+}
+
+.pet-filter button {
+  font-family: 'Source Sans 3', sans-serif;
+  color: #9f9f9f;
+  font-size: 1.15rem;
+  background-color: transparent;
+  border: none;
+}
+
+.main-footer {
+  text-align: center;
+  color: #a6a6a6;
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0 0 65px 0;
+}
+
+.list-of-pets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  column-gap: 34px;
+  row-gap: 16px;
+}
+
+.pet-card {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 165px 1fr;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .08);
+  background: white;
+  border: 1px solid #F3F3F3;
+  border-radius: 20px;
+}
+
+.pet-card-photo {
+  order: 1;
+  grid-row: 1;
+}
+
+.pet-card-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.pet-card-text {
+  padding: 18px 16px;
+}
+
+.pet-card-text h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+.pet-description {
+  margin: 0 0 1rem 0;
+  color: #626262;
+  line-height: 150%;
+  font-size: 0.9rem;
+}
+
+.pet-age {
+  color: #a2a2a2;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .pet-description {
+    font-size: 1rem;
+  }
+
+  .pet-card-text {
+    padding: 21px 29px;
+  }
+
+  .list-of-pets {
+    row-gap: 28px;
+  }
+
+  .intro-area h1 {
+    font-size: 6.25rem;
+  }
+
+  .intro-area {
+    padding-top: 139px;
+    padding-bottom: 151px;
+  }
+
+  .front-pg-btns {
+    margin-bottom: 129px;
+  }
+
+  .adoptable-section {
+    background-color: white;
+    padding: 130px 16px;
+  }
+
+  .adoptable-title {
+    font-size: 5.31rem;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .pet-filter {
+    font-size: 1.375rem;
+  }
+
+  .pet-filter button {
+    font-size: 1.375rem;
+  }
+}
