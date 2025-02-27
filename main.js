@@ -15,9 +15,8 @@ function createAgeText(birthYear) {
   const age = currYear - birthYear
   if (age == 0) {
     return "Less than a year old"
-  } else {
-    return age + " year" + (age > 1 ? "s" : "") + " old"
   }
+  return age + " year" + (age > 1 ? "s" : "") + " old"
 }
 
 async function petsArea() {
@@ -37,5 +36,19 @@ async function petsArea() {
   document.querySelector(".list-of-pets").appendChild(wrapper)
 }
 
-
 petsArea()
+
+//pet filter button
+const petButtons = document.querySelectorAll(".pet-filter button")
+
+petButtons.forEach(el => el.addEventListener("click", handleButtonClick))
+
+function handleButtonClick(e) {
+  //remove active class from all buttons
+  petButtons.forEach(el => el.classList.remove("active"))
+
+  //add active class to selected button
+  e.target.classList.add("active")
+
+  //filter pets below by species
+}
