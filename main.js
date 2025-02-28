@@ -13,9 +13,7 @@ temperatureFinder()
 function createAgeText(birthYear) {
   const currYear = new Date().getFullYear()
   const age = currYear - birthYear
-  if (age == 0) {
-    return "Less than a year old"
-  }
+  if (age == 0) return "Less than a year old"
   return age + " year" + (age > 1 ? "s" : "") + " old"
 }
 
